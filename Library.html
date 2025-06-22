@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <title>Library | Leaf and Root</title>
+</head>
+<body class="overflow-x-hidden">
+    <nav class=" text-white p-5 shadow-sm bg-linear-to-r from-green-700 to-emerald-700">
+  <div class="max-w-7xl mx-auto flex justify-between items-center">
+    <!-- Logo -->
+    <div class="text-3xl italic text-green-200 font-bold">
+        <a href="index.html">Leaf & Root</a>
+    </div>
+
+    <!-- Hamburger Button -->
+    <div class="md:hidden">
+      <button id="menu-btn" class="text-white focus:outline-none">
+        <!-- Hamburger Icon -->
+        <svg id="menu-icon" class="w-7 h-7 transition-transform duration-300 ease-in-out" fill="none" stroke="currentColor"
+          stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round"
+            d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+        <!-- X Icon (hidden initially) -->
+        <svg id="close-icon" class="w-7 h-7 hidden transition-transform duration-300 ease-in-out" fill="none" stroke="currentColor"
+          stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round"
+            d="M6 18L18 6M6 6l12 12"></path>
+        </svg>
+      </button>
+    </div>
+
+    <!-- Desktop Menu -->
+    <ul class="hidden md:flex list-none gap-10 text-[18px]">
+      <li class="hover:text-green-200"><a href="index.html">Home</a></li>
+      <li class="hover:text-green-200"><a href="CareTips.html">Care Tips</a></li>
+      <li class="hover:text-green-200"><a href="Library.html">Library</a></li>
+      <li class="hover:text-green-200"><a href="About.html">About</a></li>
+    </ul>
+  </div>
+
+  <!-- Mobile Menu with animation -->
+  <ul id="mobile-menu"
+    class="md:hidden hidden flex-col p-0 mt-4 space-y-4 text-center text-[20px] opacity-0 transform -translate-y-5 transition-all duration-300 ease-in-out">
+    <li class="hover:text-green-200"><a href="index.html">Home</a></li>
+    <li class="hover:text-green-200"><a href="CareTips.html">Care Tips</a></li>
+    <li class="hover:text-green-200"><a href="Library.html">Library</a></li>
+    <li class="hover:text-green-200"><a href="About.html">About</a></li>
+  </ul>
+</nav>
+
+<section class="bg-white py-16 px-6 md:px-20">
+  <h2 class="text-4xl font-bold text-green-900 text-center mb-10">Plant Library</h2>
+  <p class="text-center text-green-700 max-w-xl mx-auto mb-8"> A curated list of houseplants for every light and lifestyle.</p>
+
+  <div class="grid gap-8 sm:grid-cols-2 md:grid-cols-3 mb-5">
+
+    <!-- 1. Snake Plant -->
+    <div class="bg-white rounded-xl shadow-md hover:shadow-lg transition p-5" data-aos="zoom-in" data-aos-duration="1000">
+      <img src="https://media.istockphoto.com/id/1268045137/photo/potted-snake-plants-inside-a-beautiful-new-flat-or-apartment.webp?a=1&b=1&s=612x612&w=0&k=20&c=afFqmu74vJKaXkoisIKpYeo_JuDCqbQpY0jkjYtZmk8=" alt="Snake Plant" class="rounded-lg mb-4 w-full hover:scale-105 duration-300 h-70 object-cover">
+      <h3 class="text-xl font-semibold text-green-800 mb-1">Snake Plant</h3>
+      <p class="text-sm text-green-700 mb-2">Low maintenance, perfect for beginners.</p>
+      <span class="text-xs bg-green-200 text-green-800 px-2 py-1 rounded">Low Light</span>
+    </div>
+
+    <!-- 2. Aloe Vera -->
+    <div class="bg-white rounded-xl shadow-md hover:shadow-lg transition p-5" data-aos="zoom-in" data-aos-duration="1000">
+      <img src="https://images.unsplash.com/photo-1565964450731-27a34da777a1?w=500&auto=format&fit=crop&q=60" alt="Aloe Vera" class="rounded-lg mb-4 w-full hover:scale-105 duration-300 h-70 object-cover">
+      <h3 class="text-xl font-semibold text-green-800 mb-1">Aloe Vera</h3>
+      <p class="text-sm text-green-700 mb-2">Healing plant, thrives in bright light.</p>
+      <span class="text-xs bg-green-200 text-green-800 px-2 py-1 rounded">Full Sun</span>
+    </div>
+
+    <!-- 3. Basil -->
+    <div class="bg-white rounded-xl shadow-md hover:shadow-lg transition p-5" data-aos="zoom-in" data-aos-duration="1000">
+      <img src="https://images.unsplash.com/photo-1627738663093-d0779d56e3bc?w=500&auto=format&fit=crop&q=60" alt="Basil" class="rounded-lg mb-4 w-full hover:scale-105 duration-300 h-70 object-cover">
+      <h3 class="text-xl font-semibold text-green-800 mb-1">Basil</h3>
+      <p class="text-sm text-green-700 mb-2">Great for kitchens and sunny windows.</p>
+      <span class="text-xs bg-green-200 text-green-800 px-2 py-1 rounded">Indoor Herb</span>
+    </div>  
+
+    <!-- 4. Peace Lily -->
+    <div class="bg-white rounded-xl shadow-md hover:shadow-lg transition p-5" data-aos="zoom-in" data-aos-duration="1000">
+      <img src="https://media.istockphoto.com/id/184365511/photo/spathiphyllum-peace-lily-indoor-plant.webp?a=1&b=1&s=612x612&w=0&k=20&c=GQBhoTn7f2cxpCrEBVGJPo2gZttRfInfgp86O8Q8kXg=" alt="Peace Lily" class="rounded-lg mb-4 w-full hover:scale-105 duration-300 h-70 object-cover">
+      <h3 class="text-xl font-semibold text-green-800 mb-1">Peace Lily</h3>
+      <p class="text-sm text-green-700 mb-2">Air-purifying with elegant white flowers.</p>
+      <span class="text-xs bg-green-200 text-green-800 px-2 py-1 rounded">Shade Tolerant</span>
+    </div>
+
+    <!-- 5. Pothos -->
+    <div class="bg-white rounded-xl shadow-md hover:shadow-lg transition p-5" data-aos="zoom-in" data-aos-duration="1000">
+      <img src="https://media.istockphoto.com/id/2170686151/photo/pothos-houseplant-in-a-flower-pot-epipremnum-aureum.webp?a=1&b=1&s=612x612&w=0&k=20&c=ikXRDt_3YsoIDTF9c32tO6ElF3asPzNMA9cyd_gxC-g=" alt="Pothos" class="rounded-lg mb-4 w-full hover:scale-105 duration-300 h-70 object-cover">
+      <h3 class="text-xl font-semibold text-green-800 mb-1">Pothos</h3>
+      <p class="text-sm text-green-700 mb-2">Fast-growing and great for hanging baskets.</p>
+      <span class="text-xs bg-green-200 text-green-800 px-2 py-1 rounded">Low to Bright Light</span>
+    </div>
+
+    <!-- 6. ZZ Plant -->
+    <div class="bg-white rounded-xl shadow-md hover:shadow-lg transition p-5" data-aos="zoom-in" data-aos-duration="1000">
+      <img src="https://media.istockphoto.com/id/2167473180/photo/zamioculcas-zamiifolia.webp?a=1&b=1&s=612x612&w=0&k=20&c=YdvEJ9RNu4LICF_dR4aFpzUwregENIbGtWRztjICrGU=" alt="ZZ Plant" class="rounded-lg mb-4 w-full hover:scale-105 duration-300 h-70 object-cover">
+      <h3 class="text-xl font-semibold text-green-800 mb-1">ZZ Plant</h3>
+      <p class="text-sm text-green-700 mb-2">Very tough plant, thrives on neglect.</p>
+      <span class="text-xs bg-green-200 text-green-800 px-2 py-1 rounded">Low Light</span>
+    </div>
+
+    <!-- 7. Fiddle Leaf Fig -->
+    <div class="bg-white rounded-xl shadow-md hover:shadow-lg transition p-5" data-aos="zoom-in" data-aos-duration="1000">
+      <img src="https://images.unsplash.com/photo-1721932547078-38a815bb6b17?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8RmlkZGxlJTIwTGVhZiUyMEZpZ3xlbnwwfHwwfHx8MA%3D%3D" alt="Fiddle Leaf Fig" class="rounded-lg mb-4 w-full hover:scale-105 duration-300 h-70 object-cover">
+      <h3 class="text-xl font-semibold text-green-800 mb-1">Fiddle Leaf Fig</h3>
+      <p class="text-sm text-green-700 mb-2">Trendy and dramatic indoor tree.</p>
+      <span class="text-xs bg-green-200 text-green-800 px-2 py-1 rounded">Bright Indirect</span>
+    </div>
+
+    <!-- 8. Rubber Plant -->
+    <div class="bg-white rounded-xl shadow-md hover:shadow-lg transition p-5" data-aos="zoom-in" data-aos-duration="1000">
+      <img src="https://media.istockphoto.com/id/1350904021/photo/ficus-elastica-in-a-clay-terracotta-flower-pot-stands-on-a-wooden-stand-for-flowers.webp?a=1&b=1&s=612x612&w=0&k=20&c=FJMcwmN_ZaXg30CXAaqNq8-ExnOUdqd8wNfiWgcapWA=" alt="Rubber Plant" class="rounded-lg mb-4 w-full hover:scale-105 duration-300 h-70 object-cover">
+      <h3 class="text-xl font-semibold text-green-800 mb-1">Rubber Plant</h3>
+      <p class="text-sm text-green-700 mb-2">Glossy leaves, loves indirect light.</p>
+      <span class="text-xs bg-green-200 text-green-800 px-2 py-1 rounded">Bright Indirect</span>
+    </div>
+
+    <!-- 9. Calathea -->
+    <div class="bg-white rounded-xl shadow-md hover:shadow-lg transition p-5" data-aos="zoom-in" data-aos-duration="1000">
+      <img src="https://images.unsplash.com/photo-1630477726911-47765c6c9d97?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fENhbGF0aGVhfGVufDB8fDB8fHww" alt="Calathea" class="rounded-lg mb-4 w-full hover:scale-105 duration-300 h-70 object-cover">
+      <h3 class="text-xl font-semibold text-green-800 mb-1">Calathea</h3>
+      <p class="text-sm text-green-700 mb-2">Beautiful leaves that move with light.</p>
+      <span class="text-xs bg-green-200 text-green-800 px-2 py-1 rounded">Medium Light</span>
+    </div>
+
+  </div>
+</section>
+
+<footer class="bg-green-900 text-white py-12 px-6 md:px-16">
+  <div class="grid md:grid-cols-3 gap-8 text-center md:text-left">
+    
+    <!-- Brand Info -->
+    <div class="">
+      <h3 class="text-2xl font-bold italic text-green-200 mb-2">Leaf & Root</h3>
+      <p class="text-sm text-green-100">
+        Growing together, one plant at a time. Your go-to resource for plant care, tips, and a thriving green community.
+      </p>
+    </div>
+
+    <!-- Quick Links -->
+    <div>
+      <h4 class="text-lg font-semibold text-green-300 mb-3">Quick Links</h4>
+      <ul class="space-y-2 text-sm text-green-100">
+        <li><a href="index.html" class="hover:text-green-400 transition">Home</a></li>
+        <li><a href="CareTips.html" class="hover:text-green-400 transition">Care Tips</a></li>
+        <li><a href="Library.html" class="hover:text-green-400 transition">Library</a></li>
+        <li><a href="About.html" class="hover:text-green-400 transition">About</a></li>
+      </ul>
+    </div>
+
+    <!-- Social Icons -->
+    <div>
+      <h4 class="text-lg font-semibold text-green-300 mb-3">Follow Us</h4>
+      <div class="flex justify-center md:justify-start space-x-4 text-xl">
+        <li class="list-none hover:text-green-400 transition"><i class="fab fa-facebook-f"></i></li>
+        <li class="list-none hover:text-green-400 transition"><i class="fab fa-twitter"></i></li>
+        <li class="list-none hover:text-green-400 transition"><i class="fab fa-instagram"></i></li>
+        <li  class="list-none hover:text-green-400 transition"><i class="fab fa-pinterest"></i></li>
+      </div>
+    </div>
+  </div>
+
+  <div class="border-t border-green-700 mt-8 pt-4 text-center text-sm text-green-200">
+    &copy; 2025 Leaf & Root. All rights reserved.<br/>Developed by AY-DOCS
+  </div>
+</footer>
+
+
+<script>
+  const menuBtn = document.getElementById('menu-btn');
+  const menuIcon = document.getElementById('menu-icon');
+  const closeIcon = document.getElementById('close-icon');
+  const mobileMenu = document.getElementById('mobile-menu');
+
+  menuBtn.addEventListener('click', () => {
+    const isOpen = !mobileMenu.classList.contains('hidden');
+
+    // Toggle mobile menu visibility and animation
+    if (isOpen) {
+      mobileMenu.classList.add('opacity-0', '-translate-y-5');
+      setTimeout(() => mobileMenu.classList.add('hidden'), 300);
+      menuIcon.classList.remove('hidden');
+      closeIcon.classList.add('hidden');
+    } else {
+      mobileMenu.classList.remove('hidden');
+      setTimeout(() => mobileMenu.classList.remove('opacity-0', '-translate-y-5'), 10);
+      menuIcon.classList.add('hidden');
+      closeIcon.classList.remove('hidden');
+    }
+  });
+</script>
+<script>
+  AOS.init();
+</script>
+</body>
+</html>

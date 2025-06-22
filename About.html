@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <title>About Us | Leaf and Root</title>
+</head>
+<body class="overflow-x-hidden">
+<nav class=" text-white p-5 shadow-sm bg-linear-to-r from-green-700 to-emerald-700">
+  <div class="max-w-7xl mx-auto flex justify-between items-center">
+    <!-- Logo -->
+    <div class="text-3xl italic text-green-200 font-bold">
+        <a href="index.html">Leaf & Root</a>
+    </div>
+
+    <!-- Hamburger Button -->
+    <div class="md:hidden">
+      <button id="menu-btn" class="text-white focus:outline-none">
+        <!-- Hamburger Icon -->
+        <svg id="menu-icon" class="w-7 h-7 transition-transform duration-300 ease-in-out" fill="none" stroke="currentColor"
+          stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round"
+            d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+        <!-- X Icon (hidden initially) -->
+        <svg id="close-icon" class="w-7 h-7 hidden transition-transform duration-300 ease-in-out" fill="none" stroke="currentColor"
+          stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round"
+            d="M6 18L18 6M6 6l12 12"></path>
+        </svg>
+      </button>
+    </div>
+
+    <!-- Desktop Menu -->
+    <ul class="hidden md:flex list-none gap-10 text-[18px]">
+      <li class="hover:text-green-200"><a href="index.html">Home</a></li>
+      <li class="hover:text-green-200"><a href="CareTips.html">Care Tips</a></li>
+      <li class="hover:text-green-200"><a href="Library.html">Library</a></li>
+      <li class="hover:text-green-200"><a href="About.html">About</a></li>
+    </ul>
+  </div>
+
+  <!-- Mobile Menu with animation -->
+  <ul id="mobile-menu"
+    class="md:hidden hidden flex-col p-0 mt-4 space-y-4 text-center text-[20px] opacity-0 transform -translate-y-5 transition-all duration-300 ease-in-out">
+    <li class="hover:text-green-200"><a href="index.html">Home</a></li>
+    <li class="hover:text-green-200"><a href="CareTips.html">Care Tips</a></li>
+    <li class="hover:text-green-200"><a href="Library.html">Library</a></li>
+    <li class="hover:text-green-200"><a href="About.html">About</a></li>
+  </ul>
+</nav>
+  <div class="p-10">
+  <h1 class="text-5xl text-emerald-900 text-center mb-5">About Us</h1>
+  <p class="text-2xl text-emerald-700 text-center"><strong>Leaf and Root</strong> is more than just a plant care resource — it's a growing community of nature lovers, plant enthusiasts, and everyday people who believe in the beauty and power of greenery.</p>
+  </div>
+  
+  <section class="bg-[url('https://media.istockphoto.com/id/2171339792/photo/woman-in-denim-overalls-watering-plants-on-her-backyard.webp?a=1&b=1&s=612x612&w=0&k=20&c=uQ2EOParJS2oz6VKMyOLsHQv8lXaq6kxhdS_zgDeMzk=')] h-full bg-cover bg-no-repeat bg-fixed py-16 px-0 md:px-10">
+    <div class="bg-white opacity-90 m-3 rounded-lg p-4 md:p-10 shadow-lg  max-w-7xl " data-aos="zoom-in" data-aos-duration="1000">
+      <h1 class="text-4xl text-green-700 mb-5">Welcome to Leaf and Root</h1>
+      <p class="text-lg text-green-700 mb-5">Your trusted source for plant care tips, advice, and a thriving community of plant lovers.</p>
+      <p class="text-lg text-green-700">At Leaf and Root, we believe that every plant has a story to tell, and we're here to help you write yours.</p>
+  <div class="flex flex-col lg:flex-row p-7 gap-10">
+  <div>
+  <h2 class="text-3xl mb-5 text-green-700">Our Story</h2>
+  <div class="bg-emerald-700 rounded-lg p-5 text-white leading-relaxed" data-aos="fade-right" data-aos-duration="2500">
+    <p>Founded with a deep love for plants and nature, Leaf and Root began as a small passion project in a backyard filled with potted dreams. What started as a simple idea — helping people care for their plants — has blossomed into a trusted name in plant education and care. We've seen how a single healthy plant can bring peace, joy, and life into a space, and we've made it our mission to share that experience with others.</p>
+    <p>We understand that plant care can feel overwhelming, especially for beginners. That's why Leaf and Root was created — to guide, support, and inspire every step of your plant journey.</p>
+  </div>
+  </div>
+
+  <div>
+  <h2 class="text-3xl mb-5 text-green-700">Our Mission</h2>
+  <div class="bg-emerald-700 rounded-lg p-5 text-white leading-relaxed" data-aos="fade-left" data-aos-duration="2500">
+    <p>Our mission is to empower individuals to grow with their plants — to build a connection with nature, one leaf at a time. Whether it's your first cactus or your tenth monstera, we believe that everyone has the ability to become a confident, successful plant parent.</p>
+    <p>We aim to make plant care simple, accessible, and enjoyable for everyone. Through well-researched tips, easy-to-follow guides, and personalized support, we help people care for their plants in a way that fits their lifestyle and environment.</p>
+  </div>
+  </div>
+  </div>
+
+   <div class="p-5">
+  <h2 class="text-3xl font-semibold mb-4 text-green-700">What We Do</h2>
+  <p class="text-[18px] mb-5 text-green-700 gap-10">At Leaf and Root, we provide:</p>
+ <ul class="grid gap-3 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 mb-5">
+  <li class="border-l-4 border-l-green-700 bg-emerald-100 rounded-lg p-5 shadow-md shadow-green-700 hover:bg-emerald-200 transition">Easy plant care tips and how-to guides</li>
+  <li class="border-l-4 border-l-green-700 bg-emerald-100 rounded-lg p-5 shadow-md shadow-green-700 hover:bg-emerald-200 transition">Solutions for common plant problems</li>
+  <li class="border-l-4 border-l-green-700 bg-emerald-100 rounded-lg p-5 shadow-md shadow-green-700 hover:bg-emerald-200 transition">Recommendations for the best plant tools and products</li>
+  <li class="border-l-4 border-l-green-700 bg-emerald-100 rounded-lg p-5 shadow-md shadow-green-700 hover:bg-emerald-200 transition">Support for indoor and outdoor plant lovers</li>
+  <li class="border-l-4 border-l-green-700 bg-emerald-100 rounded-lg p-5 shadow-md shadow-green-700 hover:bg-emerald-200 transition">Community stories and advice from real plant parents</li>
+</ul>
+
+  </div>
+
+ <div class="px-4 md:px-10 py-12 space-y-10 text-green-900">
+  
+  <!-- Why We Care -->
+  <div data-aos="fade-up" data-aos-duration="1500">
+    <h2 class="text-3xl font-semibold mb-4 text-green-700">Why We Care</h2>
+    <p class="text-lg leading-relaxed mb-4">
+      We believe that plant care is self-care. Taking care of plants teaches patience, responsibility, and mindfulness. It brings a sense of calm and a connection to something greater. In a world that moves fast, caring for something slow — like a growing leaf or a forming root — can be deeply grounding.
+    </p>
+    <p class="text-lg leading-relaxed">
+      That's why Leaf and Root exists — to help you slow down, breathe deeply, and connect with nature in your own space. Every healthy plant is a quiet victory, and we're here to celebrate those wins with you.
+    </p>
+  </div>
+
+  <!-- Our Vision -->
+  <div data-aos="fade-up" data-aos-duration="1500">
+    <h2 class="text-3xl font-semibold mb-4 text-green-700">Our Vision</h2>
+    <p class="text-lg leading-relaxed">
+      We envision a world where every home has a touch of green, and every person knows how to nurture it. We see Leaf and Root as a hub for plant education, care, and community — where people from all backgrounds can come together to share in the joy of growing.
+    </p>
+  </div>
+
+  <!-- Join the Community -->
+  <div data-aos="fade-up" data-aos-duration="1500">
+    <h2 class="text-3xl font-semibold mb-4 text-green-700">Join the Community</h2>
+    <p class="text-lg leading-relaxed">
+      Whether you're here for advice, inspiration, or just some green motivation, we're happy to have you. Together, let's grow happier, greener lives — one leaf and one root at a time.
+    </p>
+  </div>
+
+</div>
+<p class="text-lg leading-relaxed pt-5 text-emerald-900 text-right italic">-- The Leaf and Root Team</p>
+  </section>
+
+
+ 
+
+  <footer class="bg-green-900 text-white py-12 px-6 md:px-16">
+  <div class="grid md:grid-cols-3 gap-8 text-center md:text-left">
+    
+    <!-- Brand Info -->
+    <div class="">
+      <h3 class="text-2xl font-bold italic text-green-200 mb-2">Leaf & Root</h3>
+      <p class="text-sm text-green-100">
+        Growing together, one plant at a time. Your go-to resource for plant care, tips, and a thriving green community.
+      </p>
+    </div>
+
+    <!-- Quick Links -->
+    <div>
+      <h4 class="text-lg font-semibold text-green-300 mb-3">Quick Links</h4>
+      <ul class="space-y-2 text-sm text-green-100">
+        <li><a href="index.html" class="hover:text-green-400 transition">Home</a></li>
+        <li><a href="CareTips.html" class="hover:text-green-400 transition">Care Tips</a></li>
+        <li><a href="Library.html" class="hover:text-green-400 transition">Library</a></li>
+        <li><a href="About.html" class="hover:text-green-400 transition">About</a></li>
+      </ul>
+    </div>
+
+    <!-- Social Icons -->
+    <div>
+      <h4 class="text-lg font-semibold text-green-300 mb-3">Follow Us</h4>
+      <div class="flex justify-center md:justify-start space-x-4 text-xl">
+        <li class="list-none hover:text-green-400 transition"><i class="fab fa-facebook-f"></i></li>
+        <li class="list-none hover:text-green-400 transition"><i class="fab fa-twitter"></i></li>
+        <li class="list-none hover:text-green-400 transition"><i class="fab fa-instagram"></i></li>
+        <li  class="list-none hover:text-green-400 transition"><i class="fab fa-pinterest"></i></li>
+      </div>
+    </div>
+  </div>
+
+  <div class="border-t border-green-700 mt-8 pt-4 text-center text-sm text-green-200">
+    &copy; 2025 Leaf & Root. All rights reserved.<br/>Developed by AY-DOCS
+  </div>
+</footer>
+
+<script>
+  const menuBtn = document.getElementById('menu-btn');
+  const menuIcon = document.getElementById('menu-icon');
+  const closeIcon = document.getElementById('close-icon');
+  const mobileMenu = document.getElementById('mobile-menu');
+
+  menuBtn.addEventListener('click', () => {
+    const isOpen = !mobileMenu.classList.contains('hidden');
+
+    // Toggle mobile menu visibility and animation
+    if (isOpen) {
+      mobileMenu.classList.add('opacity-0', '-translate-y-5');
+      setTimeout(() => mobileMenu.classList.add('hidden'), 300);
+      menuIcon.classList.remove('hidden');
+      closeIcon.classList.add('hidden');
+    } else {
+      mobileMenu.classList.remove('hidden');
+      setTimeout(() => mobileMenu.classList.remove('opacity-0', '-translate-y-5'), 10);
+      menuIcon.classList.add('hidden');
+      closeIcon.classList.remove('hidden');
+    }
+  });
+</script>
+<script>
+  AOS.init();
+</script>
+
+</body>
+</html>

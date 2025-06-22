@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <title>CareTips | Leaf and Root</title>
+</head>
+
+<body class="overflow-x-hidden">
+    <nav class=" text-white p-5 shadow-sm bg-gradient-to-r from-green-700 to-emerald-700">
+  <div class="max-w-7xl mx-auto flex justify-between items-center">
+    <!-- Logo -->
+    <div class="text-3xl italic text-green-200 font-bold">
+        <a href="index.html">Leaf & Root</a>
+    </div>
+
+    <!-- Hamburger Button -->
+    <div class="md:hidden">
+      <button id="menu-btn" class="text-white focus:outline-none">
+        <!-- Hamburger Icon -->
+        <svg id="menu-icon" class="w-7 h-7 transition-transform duration-300 ease-in-out" fill="none" stroke="currentColor"
+          stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round"
+            d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+        <!-- X Icon (hidden initially) -->
+        <svg id="close-icon" class="w-7 h-7 hidden transition-transform duration-300 ease-in-out" fill="none" stroke="currentColor"
+          stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round"
+            d="M6 18L18 6M6 6l12 12"></path>
+        </svg>
+      </button>
+    </div>
+
+    <!-- Desktop Menu -->
+    <ul class="hidden md:flex list-none gap-10 text-[18px]">
+      <li class="hover:text-green-200"><a href="index.html">Home</a></li>
+      <li class="hover:text-green-200"><a href="CareTips.html">Care Tips</a></li>
+      <li class="hover:text-green-200"><a href="Library.html">Library</a></li>
+      <li class="hover:text-green-200"><a href="About.html">About</a></li>
+    </ul>
+  </div>
+
+  <!-- Mobile Menu with animation -->
+  <ul id="mobile-menu"
+    class="md:hidden hidden flex-col p-0 mt-4 space-y-4 text-center text-[20px] opacity-0 transform -translate-y-5 transition-all duration-300 ease-in-out">
+    <li class="hover:text-green-200"><a href="index.html">Home</a></li>
+    <li class="hover:text-green-200"><a href="CareTips.html">Care Tips</a></li>
+    <li class="hover:text-green-200"><a href="Library.html">Library</a></li>
+    <li class="hover:text-green-200"><a href="About.html">About</a></li>
+  </ul>
+</nav>
+
+<section class="relative w-full h-[60vh] md:h-[90vh] overflow-hidden">
+  <!-- Background Image -->
+  <img src="https://plantpalace.vercel.app/images/blogbg.jpg" alt="Plants background" class="w-full  h-full object-cover"
+  />
+
+  <!-- Text on Image -->
+  <div class="absolute inset-0 flex flex-col items-center justify-center text-center text-white px-4">
+    <h1 class="text-4xl md:text-5xl font-bold mb-4" data-aos="zoom-in" data-aos-duration="1000">Plant Care Tips</h1>
+    <p class="max-w-2xl text-lg md:text-xl" data-aos="zoom-in" data-aos-duration="1000">
+      Whether you're a beginner or seasoned plant lover, these tips will help your plants thrive year-round.
+    </p>
+  </div>
+</section>
+<!------- Care Tips ------->
+<section class="bg-white p-10">
+        <h2 class="text-green-900 text-4xl flex justify-center">Start Growing with Confidence</h2>
+        <p class="text-green-800 text-lg text-center mt-4">Whether you're a beginner or an experienced gardener, our tips and resources will help you nurture your plants with ease.</p>
+        <div class="grid md:grid-cols-3 sm:grid-cols-2 gap-5 mt-15 mb-5" >
+            <!-- Card 1 -->
+            <div class="bg-green-200 p-5 rounded-md shadow-lg " data-aos="fade-right" data-aos-duration="1000">
+                <img src="https://img.icons8.com/ios-filled/100/228B22/watering-can.png" alt="Watering icon" class="w-20 h-20 mb-3">
+                <h3 class="text-xl font-semibold text-green-900 mb-2">Watering Basics</h3>
+                <p class="text-green-800  text-sm">Learn how to water your plants properly—too little or too much can both be harmful.</p>
+            </div>
+
+            <!-- Card 2 -->
+             <div class="bg-green-200 p-5 rounded-md shadow-lg" data-aos="zoom-in" data-aos-duration="1000">
+                <img src="https://img.icons8.com/ios-filled/100/228B22/sun.png" alt="sunlight icon" class="w-20 h-20 mb-3">
+                <h3 class="text-xl font-semibold text-green-900 mb-2">Sunlight Needs</h3>
+                <p class="text-green-800  text-sm">Understand how much light your plants need to thrive—full sun, partial shade, or low light.</p>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="bg-green-200 p-5 rounded-md shadow-lg" data-aos="fade-left" data-aos-duration="1000">
+                <img src="https://img.icons8.com/ios-filled/100/228B22/potted-plant.png" alt="potting icon" class="w-20 h-20 mb-3">
+                <h3 class="text-xl font-semibold text-green-900 mb-2">Choosing the Right Pot</h3>
+                <p class="text-green-800  text-sm"> Select the best pots with proper drainage and space to help roots grow healthy and strong.</p>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="bg-green-200 p-5 rounded-md shadow-lg " data-aos="fade-right" data-aos-duration="1000">
+                <img src="https://img.icons8.com/external-victoruler-solid-victoruler/100/228B22/external-fertilizer-farming-victoruler-solid-victoruler.png" alt="Fertilizer icon" class="w-20 h-20 mb-3">
+                <h3 class="text-xl font-semibold text-green-900 mb-2">Fertilizing Tips</h3>
+                <p class="text-green-800  text-sm">Use the right fertilizer for your plant type and avoid overfeeding which can damage roots.</p>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="bg-green-200 p-5 rounded-md shadow-lg" data-aos="zoom-in" data-aos-duration="1000">
+                <img src="https://img.icons8.com/ios-filled/100/228B22/plant-under-rain.png" alt="Humidity icon" class="w-20 h-20 mb-3">
+                <h3 class="text-xl font-semibold text-green-900 mb-2">Humidity Control</h3>
+                <p class="text-green-800  text-sm">Tropical plants love moisture. Mist leaves or use a humidifier during dry months.</p>
+            </div>
+
+            <!-- Card 6 -->
+            <div class="bg-green-200 p-5 rounded-md shadow-lg " data-aos="fade-left" data-aos-duration="1000">
+                <img src="https://img.icons8.com/external-smashingstocks-mixed-smashing-stocks/100/228B22/external-Pruning-gardening-and-seeding-smashingstocks-mixed-smashing-stocks.png" alt="Pruning icon" class="w-20 h-20 mb-3">
+                <h3 class="text-xl font-semibold text-green-900 mb-2">Pruning Practices</h3>
+                <p class="text-green-800  text-sm">Trim dead leaves and branches regularly to encourage healthy new growth.</p>
+            </div>
+
+            <!-- Card 7 -->
+            <div class="bg-green-200 p-5 rounded-md shadow-lg " data-aos="fade-right" data-aos-duration="1000">
+                <img src="https://img.icons8.com/ios-filled/100/228B22/thermometer.png" alt="Temperature icon" class="w-20 h-20 mb-3">
+                <h3 class="text-xl font-semibold text-green-900 mb-2">Temperature Awareness</h3>
+                <p class="text-green-800  text-sm">Keep plants in a stable environment—avoid cold drafts or extreme heat changes.</p>
+            </div>
+
+            <!-- Card 8 -->
+            <div class="bg-green-200 p-5 rounded-md shadow-lg  " data-aos="zoom-in" data-aos-duration="1000">
+                <img src="https://img.icons8.com/external-nawicon-glyph-nawicon/100/228B22/external-No-Bugs-internet-security-nawicon-glyph-nawicon.png" alt="Pest icon" class="w-20 h-20 mb-3">
+                <h3 class="text-xl font-semibold text-green-900 mb-2">Watch for Pests</h3>
+                <p class="text-green-800  text-sm">Check for bugs or fungi. Early detection helps prevent serious damage to your plants.</p>
+            </div>
+
+        </div>
+
+
+</section>
+    
+<section class="py-16 px-6 md:px-16 bg-green-50">
+    <h2 class="text-3xl font-bold text-center text-[#228B22] mb-12">
+        Common <span class="text-green-800">Plant Care Mistakes</span> to Avoid
+    </h2>
+
+  <div class="grid  sm:grid-cols-2 gap-10">
+    <div class="bg-green-100 p-5 rounded-md shadow-lg border-l-4 border-l-green-500" data-aos="fade-up" data-aos-duration="1000">
+      <img src="https://img.icons8.com/ios-filled/100/228B22/water.png" alt="Overwatering" class="w-16 h-16 mb-3">
+      <h3 class="text-xl font-semibold text-green-900 mb-2">Overwatering</h3>
+      <p class="text-green-800 text-sm">Too much water can suffocate roots. Let soil dry before watering again.</p>
+    </div>
+
+    <div class="bg-green-100 p-5 rounded-md shadow-lg border-l-4 border-l-green-500" data-aos="fade-up" data-aos-duration="1000">
+      <img src="https://img.icons8.com/ios-filled/100/228B22/do-not-expose-to-sunlight.png" alt="Not enough light" class="w-16 h-16 mb-3">
+      <h3 class="text-xl font-semibold text-green-900 mb-2">Insufficient Light</h3>
+      <p class="text-green-800 text-sm">Placing light-loving plants in dark areas can stunt growth or cause leaf drop.</p>
+    </div>
+
+    <div class="bg-green-100 p-5 rounded-md shadow-lg border-l-4 border-l-green-500" data-aos="fade-up" data-aos-duration="1000">
+      <img src="https://img.icons8.com/ios-filled/100/228B22/thermometer-down.png" alt="Temperature mistake" class="w-16 h-16 mb-3">
+      <h3 class="text-xl font-semibold text-green-900 mb-2">Ignoring Temperature</h3>
+      <p class="text-green-800 text-sm">Sudden changes or cold drafts can shock plants. Keep a stable environment.</p>
+    </div>
+
+    <div class="bg-green-100 p-5 rounded-md shadow-lg border-l-4 border-l-green-500" data-aos="fade-up" data-aos-duration="1000">
+      <img src="https://img.icons8.com/ios-filled/100/228B22/slurry.png" alt="Fertilizing" class="w-16 h-16 mb-3">
+      <h3 class="text-xl font-semibold text-green-900 mb-2">Overfertilizing</h3>
+      <p class="text-green-800 text-sm">Too much fertilizer can burn roots and cause salt buildup in the soil.</p>
+    </div>
+
+    <div class="bg-green-100 p-5 rounded-md shadow-lg border-l-4 border-l-green-500" data-aos="fade-up" data-aos-duration="1000">
+      <img src="https://img.icons8.com/ios-filled/100/228B22/scissors.png" alt="Pruning mistake" class="w-16 h-16 mb-3">
+      <h3 class="text-xl font-semibold text-green-900 mb-2">Skipping Pruning</h3>
+      <p class="text-green-800 text-sm">Not trimming dead or leggy growth can weaken the plant over time.</p>
+    </div>
+  </div>
+</section>
+
+
+  <div class="max-w-4xl mx-10 lg:mx-auto bg-green-800 m-10  p-8 rounded-xl shadow-lg " data-aos="zoom-in" data-aos-duration="2000">
+    <div class="flex justify-center mb-4">
+      <img src="https://img.icons8.com/ios-filled/50/ffffff/leaf.png" alt="Leaf Icon" class="w-8 h-8" />
+    </div>
+    <h2 class="text-2xl text-white md:text-3xl font-semibold leading-relaxed">
+      “The glory of gardening: hands in the dirt, head in the sun, heart with nature. 
+      To nurture a garden is to feed not just on the body, but the soul.”
+    </h2>
+    <p class="mt-4 text-lg opacity-80">-- Alfred Austin</p>
+  </div>
+
+  <footer class="bg-green-900 text-white py-12 px-6 md:px-16">
+  <div class="grid md:grid-cols-3 gap-8 text-center md:text-left">
+    
+    <!-- Brand Info -->
+    <div>
+      <h3 class="text-2xl font-bold italic text-green-200 mb-2">Leaf & Root</h3>
+      <p class="text-sm text-green-100">
+        Growing together, one plant at a time. Your go-to resource for plant care, tips, and a thriving green community.
+      </p>
+    </div>
+
+    <!-- Quick Links -->
+    <div>
+      <h4 class="text-lg font-semibold text-green-300 mb-3">Quick Links</h4>
+      <ul class="space-y-2 text-sm text-green-100">
+        <li><a href="index.html" class="hover:text-green-400 transition">Home</a></li>
+        <li><a href="CareTips.html" class="hover:text-green-400 transition">Care Tips</a></li>
+        <li><a href="Library.html" class="hover:text-green-400 transition">Library</a></li>
+        <li><a href="About.html" class="hover:text-green-400 transition">About</a></li>
+      </ul>
+    </div>
+
+    <!-- Social Icons -->
+    <div>
+      <h4 class="text-lg font-semibold text-green-300 mb-3">Follow Us</h4>
+      <div class="flex justify-center md:justify-start space-x-4 text-xl">
+        <li class="list-none hover:text-green-400 transition"><i class="fab fa-facebook-f"></i></li>
+        <li class="list-none hover:text-green-400 transition"><i class="fab fa-twitter"></i></li>
+        <li class="list-none hover:text-green-400 transition"><i class="fab fa-instagram"></i></li>
+        <li  class="list-none hover:text-green-400 transition"><i class="fab fa-pinterest"></i></li>
+      </div>
+    </div>
+  </div>
+
+  <div class="border-t border-green-700 mt-8 pt-4 text-center text-sm text-green-200">
+    &copy; 2025 Leaf & Root. All rights reserved.<br/>Developed by AY-DOCS
+  </div>
+</footer>
+
+
+<script>
+  const menuBtn = document.getElementById('menu-btn');
+  const menuIcon = document.getElementById('menu-icon');
+  const closeIcon = document.getElementById('close-icon');
+  const mobileMenu = document.getElementById('mobile-menu');
+
+  menuBtn.addEventListener('click', () => {
+    const isOpen = !mobileMenu.classList.contains('hidden');
+
+    // Toggle mobile menu visibility and animation
+    if (isOpen) {
+      mobileMenu.classList.add('opacity-0', '-translate-y-5');
+      setTimeout(() => mobileMenu.classList.add('hidden'), 300);
+      menuIcon.classList.remove('hidden');
+      closeIcon.classList.add('hidden');
+    } else {
+      mobileMenu.classList.remove('hidden');
+      setTimeout(() => mobileMenu.classList.remove('opacity-0', '-translate-y-5'), 10);
+      menuIcon.classList.add('hidden');
+      closeIcon.classList.remove('hidden');
+    }
+  });
+</script>
+<script>
+  AOS.init();
+</script>
+</body>
+</html>
